@@ -30,7 +30,8 @@
                     <label for="email" class="mb-2 block uppercase text-gray-600">
                         E-mail
                     </label>
-                    <input type="text" id="email" name="email" placeholder="Tu E-mail" class="border p-3 w-full rounded-lg @error('email')
+
+                    <input type="text" id="email" name="email"  accept="image/jpeg, image/jpg, image/png, image/gif" placeholder="Tu E-mail" class="border p-3 w-full rounded-lg @error('email')
                         border-red-500
                     @enderror " value="{{auth()->user()->email}}">
                     @error('email')
